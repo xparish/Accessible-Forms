@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Xenalyn Parish">
 	<title>Form Activity Solution File</title>
- <link rel="stylesheet" href="styles.css" type="text/css">
+	<link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
 	<a href="#main-content" id="skipLink">Skip to main content</a>
@@ -30,18 +30,18 @@
 				<fieldset>
 					<legend>Contact Information</legend>
 
-					<label for="fullName">Full Name (required):</label>
+					<label for="fullName">Full Name <span class="required">*</span></label>
 					<input type="text" id="fullName" name="fullName" required>
 
-					<label for="email">Email Address (required):</label>
+					<label for="email">Email Address <span class="required">*</span></label>
 					<input type="email" id="email" name="email" required>
 
-		
-					<label for="phone">Phone Number (required):</label>
+					<label for="phone">Phone Number <span class="required">*</span></label>
 					<input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="1234567890">
 
 					<fieldset>
-						<legend>Preferred Contact Method (required):</legend>
+						<legend>Preferred Contact Method <span class="required">*</span></legend>
+
 						<input type="radio" id="prefEmail" name="contactMethod" value="email" required>
 						<label for="prefEmail">Email</label>
 
@@ -49,7 +49,7 @@
 						<label for="prefPhone">Phone</label>
 					</fieldset>
 
-					<label for="state">State of Residence:</label>
+					<label for="state">State of Residence <span class="required">*</span></label>
 					<select id="state" name="state" required>
 						<option value="">-- Select your state --</option>
 						<option value="AL">Alabama</option>
@@ -104,10 +104,10 @@
 						<option value="WY">Wyoming</option>
 					</select>
 
-					<label for="comments">Comments:</label>
+					<label for="comments">Comments</label>
 					<textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter your comments here..."></textarea>
 
-					<button type="submit">Submit</button>
+					<input type="submit" value="Submit">
 				</fieldset>
 			</form>
 		</article>
